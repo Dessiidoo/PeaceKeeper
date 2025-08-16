@@ -50,7 +50,7 @@ export default function AlertsPanel({ alerts, emergencyServices, onVoiceControl 
   };
 
   return (
-    <aside className="w-80 tactical-surface border-l flex flex-col">
+    <aside className="w-64 tactical-surface border-l flex flex-col">
       {/* Real-time Alerts */}
       <div className="p-4 border-b border-gray-700">
         <h3 className="font-semibold mb-3 text-tactical-blue" data-testid="text-alerts-title">

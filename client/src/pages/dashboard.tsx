@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { queryClient } from "@/lib/queryClient";
 import TacticalHeader from "@/components/tactical-header";
 import MissionSidebar from "@/components/mission-sidebar";
 import TacticalMap from "@/components/tactical-map";
@@ -101,7 +102,7 @@ export default function Dashboard() {
         onEmergencyAlert={handleEmergencyAlert}
       />
       
-      <div className="flex h-[calc(100vh-80px)]">
+      <div className="flex h-[calc(100vh-64px)]">
         <MissionSidebar
           threatLevel={threatLevel}
           responseTime={formatTime(missionTime)}

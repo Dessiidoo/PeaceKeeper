@@ -133,10 +133,10 @@ export default function TacticalMap({
       </div>
 
       {/* Tactical Control Panel */}
-      <div className="tactical-surface border-t p-4">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="tactical-surface border-t p-3">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           <Button
-            className="tactical-button-success p-4 rounded-xl font-bold text-lg"
+            className="tactical-button-success p-3 rounded-lg font-bold"
             onClick={handleExecuteRecommendedRoute}
             data-testid="button-execute-safe-route"
           >
@@ -145,7 +145,7 @@ export default function TacticalMap({
           </Button>
           
           <Button
-            className="tactical-button-primary p-4 rounded-xl font-bold text-lg"
+            className="tactical-button-primary p-3 rounded-lg font-bold"
             onClick={onVoiceGuidance}
             data-testid="button-voice-guidance"
           >
@@ -154,7 +154,7 @@ export default function TacticalMap({
           </Button>
           
           <Button
-            className="tactical-button-warning p-4 rounded-xl font-bold text-lg"
+            className="tactical-button-warning p-3 rounded-lg font-bold"
             onClick={onRequestBackup}
             data-testid="button-request-backup"
           >
@@ -164,7 +164,7 @@ export default function TacticalMap({
           
           <Button
             variant="secondary"
-            className="bg-gray-700 hover:bg-gray-600 text-white p-4 rounded-xl font-bold text-lg transition-colors"
+            className="bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-lg font-bold transition-colors"
             onClick={onIncidentLog}
             data-testid="button-incident-log"
           >

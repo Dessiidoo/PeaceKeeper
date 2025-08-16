@@ -44,7 +44,7 @@ export default function MissionSidebar({
   };
 
   return (
-    <aside className="w-80 tactical-surface border-r flex flex-col">
+    <aside className="w-64 tactical-surface border-r flex flex-col">
       {/* Mission Status */}
       <div className="p-4 border-b border-gray-700">
         <h2 className="text-lg font-bold mb-3 text-tactical-blue" data-testid="text-mission-status">
