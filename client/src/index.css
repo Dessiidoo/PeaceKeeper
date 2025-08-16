@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(210 25% 7.8431%);
+  --card: hsl(180 6.6667% 97.0588%);
+  --card-foreground: hsl(210 25% 7.8431%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(210 25% 7.8431%);
+  --primary: hsl(203.8863 88.2845% 53.1373%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(210 25% 7.8431%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(240 1.9608% 90%);
+  --muted-foreground: hsl(210 25% 7.8431%);
+  --accent: hsl(211.5789 51.3514% 92.7451%);
+  --accent-foreground: hsl(203.8863 88.2845% 53.1373%);
+  --destructive: hsl(356.3033 90.5579% 54.3137%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(201.4286 30.4348% 90.9804%);
+  --input: hsl(200 23.0769% 97.4510%);
+  --ring: hsl(202.8169 89.1213% 53.1373%);
+  --tactical-blue: hsl(213 100% 46.7%);
+  --tactical-navy: hsl(241 77% 20%);
+  --danger-red: hsl(4 90% 58%);
+  --safety-green: hsl(122 39% 49%);
+  --warning-amber: hsl(36 100% 50%);
+  --dark-surface: hsl(0 0% 11.8%);
+  --darker-surface: hsl(0 0% 7.1%);
+  --font-tactical: 'Roboto', sans-serif;
+  --radius: 1.3rem;
+}
+
+.dark {
+  --background: hsl(0 0% 7.1%);
+  --foreground: hsl(200 6.6667% 91.1765%);
+  --card: hsl(0 0% 11.8%);
+  --card-foreground: hsl(0 0% 85.0980%);
+  --popover: hsl(0 0% 7.1%);
+  --popover-foreground: hsl(200 6.6667% 91.1765%);
+  --primary: hsl(213 100% 46.7%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(241 77% 20%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(0 0% 9.4118%);
+  --muted-foreground: hsl(210 3.3898% 46.2745%);
+  --accent: hsl(0 0% 11.8%);
+  --accent-foreground: hsl(213 100% 46.7%);
+  --destructive: hsl(4 90% 58%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(210 5.2632% 14.9020%);
+  --input: hsl(207.6923 27.6596% 18.4314%);
+  --ring: hsl(202.8169 89.1213% 53.1373%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-darker-surface text-white font-[var(--font-tactical)] antialiased;
+  }
+}
+
+@layer components {
+  .tactical-button-primary {
+    @apply bg-tactical-blue hover:bg-blue-600 text-white font-bold transition-colors;
+  }
+  
+  .tactical-button-success {
+    @apply bg-safety-green hover:bg-green-600 text-white font-bold transition-colors;
+  }
+  
+  .tactical-button-danger {
+    @apply bg-danger-red hover:bg-red-600 text-white font-bold transition-colors;
+  }
+  
+  .tactical-button-warning {
+    @apply bg-warning-amber hover:bg-yellow-600 text-black font-bold transition-colors;
+  }
+  
+  .tactical-surface {
+    @apply bg-dark-surface border-gray-700;
+  }
+  
+  .tactical-surface-darker {
+    @apply bg-darker-surface border-gray-700;
+  }
+}
