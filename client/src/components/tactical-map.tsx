@@ -134,47 +134,50 @@ export default function TacticalMap({
         </div>
     
 
-      )/* Tactical Control Panel */(
-      <div className="tactical-surface border-t p-3">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-          <Button
-            className="tactical-button-success p-3 rounded-lg font-bold"
-            onClick={handleExecuteRecommendedRoute}
-            data-testid="button-execute-safe-route"
-          >
-            <Route className="mb-2 h-6 w-6" />
-            EXECUTE SAFE ROUTE
-          </Button>
-          
-          <Button
-            className="tactical-button-primary p-3 rounded-lg font-bold"
-            onClick={onVoiceGuidance}
-            data-testid="button-voice-guidance"
-          >
-            <Mic className="mb-2 h-6 w-6" />
-            VOICE GUIDANCE
-          </Button>
-          
-          <Button
-            className="tactical-button-warning p-3 rounded-lg font-bold"
-            onClick={onRequestBackup}
-            data-testid="button-request-backup"
-          >
-            <Users className="mb-2 h-6 w-6" />
-            REQUEST BACKUP
-          </Button>
-          
-          <Button
-            variant="secondary"
-            className="bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-lg font-bold transition-colors"
-            onClick={onIncidentLog}
-            data-testid="button-incident-log"
-          >
-            <ClipboardList className="mb-2 h-6 w-6" />
-            INCIDENT LOG
-          </Button>
-        
-    
-  
-  );
+      </div>
+  </div>
+
+  {/* Tactical Control Panel */}
+  <div className="tactical-surface border-t p-3 mt-2">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+      <Button
+        className="tactical-button-success p-3 rounded-lg font-bold"
+        onClick={handleExecuteRecommendedRoute}
+        data-testid="button-execute-safe-route"
+      >
+        <Route className="mb-2 h-6 w-6" />
+        EXECUTE SAFE ROUTE
+      </Button>
+
+      <Button
+        className="tactical-button-primary p-3 rounded-lg font-bold"
+        onClick={onVoiceGuidance}
+        data-testid="button-voice-guidance"
+      >
+        <Mic className="mb-2 h-6 w-6" />
+        VOICE GUIDANCE
+      </Button>
+
+      <Button
+        className="tactical-button-warning p-3 rounded-lg font-bold"
+        onClick={onRequestBackup}
+        data-testid="button-request-backup"
+      >
+        <Users className="mb-2 h-6 w-6" />
+        REQUEST BACKUP
+      </Button>
+
+      <Button
+        variant="secondary"
+        className="bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-lg font-bold transition-colors"
+        onClick={onIncidentLog}
+        data-testid="button-incident-log"
+      >
+        <ClipboardList className="mb-2 h-6 w-6" />
+        INCIDENT LOG
+      </Button>
+    </div>
+  </div>
+</div>   {/* closes the .relative map wrapper */}
+</main>
           }}
