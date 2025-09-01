@@ -31,11 +31,10 @@ export default function TacticalMap({
 
   return (
     <main className="flex-1 flex flex-col">
-      {/* Map Container */}
+      
       <div className="flex-1 relative bg-gray-900">
-        {/* Map placeholder with tactical overlay */}
+        
         <div className="w-full h-[50vh] bg-cover bg-center relative"
-          style={{ 
             backgroundImage: `url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')`
           }}
           data-testid="container-map"
@@ -89,7 +88,7 @@ export default function TacticalMap({
             />
           </div>
 
-          {/* Alert Indicators */}
+          
           {alerts.map((alert, index) => (
             <div
               key={alert.id}
@@ -97,7 +96,7 @@ export default function TacticalMap({
                 alert.priority === 'critical' ? 'bg-danger-red animate-pulse' :
                 alert.priority === 'high' ? 'bg-danger-red' :
                 'bg-warning-amber'
-              }`}
+            `}
               style={{
                 top: `${30 + index * 10}%`,
                 left: `${40 + index * 15}%`
