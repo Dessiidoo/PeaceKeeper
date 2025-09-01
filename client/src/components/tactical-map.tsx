@@ -91,13 +91,14 @@ export default function TacticalMap({
           </div>
 
           
-          {alerts.map((alert, index) => (
             {alerts.map((alert, index) => (
   <div
     key={alert.id}
     className={`absolute w-3 h-3 rounded-full border-2 border-white shadow-lg ${
-      alert.priority === 'critical' ? 'bg-danger-red animate-pulse'
-        : alert.priority === 'high' ? 'bg-danger-red'
+      alert.priority === 'critical'
+        ? 'bg-danger-red animate-pulse'
+        : alert.priority === 'high'
+        ? 'bg-danger-red'
         : 'bg-warning-amber'
     }`}
     style={{
