@@ -34,8 +34,7 @@ export default function TacticalMap({
       {/* Map Container */}
       <div className="flex-1 relative bg-gray-900">
         {/* Map placeholder with tactical overlay */}
-        <div 
-          className="w-full h-full bg-cover bg-center relative"
+        <div className="w-full h-[50vh] bg-cover bg-center relative"
           style={{ 
             backgroundImage: `url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')`
           }}
