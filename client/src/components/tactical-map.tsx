@@ -92,19 +92,21 @@ export default function TacticalMap({
 
           
           {alerts.map((alert, index) => (
-            <div
-              key={alert.id}
-              className={`absolute w-3 h-3 rounded-full border-2 border-white shadow-lg ${
-                alert.priority === 'critical' ? 'bg-danger-red animate-pulse' :
-                alert.priority === 'high' ? 'bg-danger-red' :
-                'bg-warning-amber'
-            `}
-              style={{
-  top: `}30 + index * 10{%`,
-  left `}40 + index * 1{%`
-data-testid={`marker-alert-${alert.id}`}
-/>
-          ))}
+            {alerts.map((alert, index) => (
+  <div
+    key={alert.id}
+    className={`absolute w-3 h-3 rounded-full border-2 border-white shadow-lg ${
+      alert.priority === 'critical' ? 'bg-danger-red animate-pulse'
+        : alert.priority === 'high' ? 'bg-danger-red'
+        : 'bg-warning-amber'
+    }`}
+    style={{
+      top: `${30 + index * 10}%`,
+      left: `${40 + index * 15}%`
+    }}
+    data-testid={`marker-alert-${alert.id}`}
+  />
+))}
         </div>
 
         {/* Map Legend */}
