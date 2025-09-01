@@ -95,7 +95,8 @@ export default function Dashboard() {
                      alerts.some(alert => alert.priority === 'high') ? 'MEDIUM' : 'LOW';
 
   return (
-    <div className="min-h-screen bg-darker-surface text-white font-tactical">
+    <return (
+  <div className="h-[100svh] max-h-[100svh] overflow-y-auto bg-darker-surface text-white font-tactical">
       <TacticalHeader
         officer={officer}
         isConnected={isConnected}
