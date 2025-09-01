@@ -134,8 +134,8 @@ export default function TacticalMap({
         </div>
     
 
-      </div>
-  </div>
+      
+  </div
 
   {/* Tactical Control Panel */}
   <div className="tactical-surface border-t p-3 mt-2">
