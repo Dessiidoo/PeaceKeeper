@@ -178,6 +178,7 @@ export default function TacticalMap({
       </Button>
     </div>
   </div>
-</div>   {/* closes the .relative map wrapper */}
+</div>
 </main>
-          }}
+);
+}
