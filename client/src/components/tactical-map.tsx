@@ -137,7 +137,7 @@ export default function TacticalMap({
       
   </main>
 
-    {/* Tactical Control Panel */}
+    )/* Tactical Control Panel */(
   <div className="tactical-surface border-t p-3 mt-2">
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
       <Button
