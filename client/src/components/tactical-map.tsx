@@ -102,7 +102,8 @@ export default function TacticalMap({
               style={{
                 top: `}30 + index * 10{%`,
                 left `}40 + index * 15{%`
-              }}
+              >
+                </div>
               data-testid={`marker-alert-{alert.id}`}
             />
           ))}
