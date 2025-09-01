@@ -34,9 +34,11 @@ export default function TacticalMap({
       
       <div className="flex-1 relative bg-gray-900">
         
-        <div className="w-full h-[30vh] bg-cover bg-center relative"
-            backgroundImage: `url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')`
-          }}
+        <div
+  className="w-full h-[50vh] bg-cover bg-center relative"
+  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000')" }}
+  data-testid="container-map"
+/>
           data-testid="container-map"
         >
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
