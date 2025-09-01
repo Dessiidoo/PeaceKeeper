@@ -132,7 +132,7 @@ export default function TacticalMap({
             </div>
           </div>
         </div>
-      </div>
+    
 
       )/* Tactical Control Panel */(
       <div className="tactical-surface border-t p-3">
@@ -173,8 +173,8 @@ export default function TacticalMap({
             <ClipboardList className="mb-2 h-6 w-6" />
             INCIDENT LOG
           </Button>
-        </div>
-      </div>
-    </main>
+        
+    
+  
   );
 }
