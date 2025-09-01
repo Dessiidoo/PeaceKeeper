@@ -100,8 +100,8 @@ export default function TacticalMap({
                 'bg-warning-amber'
             `}
               style={{
-                top: `{30 + index * 10}%`,
-                left: `{40 + index * 15}%`
+                top: `}30 + index * 10{%`,
+                left: `}40 + index * 15{%`
               }}
               data-testid={`marker-alert-${alert.id}`}
             />
