@@ -94,7 +94,7 @@ export default function Dashboard() {
   const threatLevel = alerts.some(alert => alert.priority === 'critical') ? 'HIGH' : 
                      alerts.some(alert => alert.priority === 'high') ? 'MEDIUM' : 'LOW';
 
-  return (
+
     <return (
   <div className="h-[100svh] max-h-[100svh] overflow-y-auto bg-darker-surface text-white font-tactical">
       <TacticalHeader
